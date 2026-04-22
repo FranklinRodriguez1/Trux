@@ -1,0 +1,99 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #000000;
+  border-right: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  z-index: 40;
+}
+
+.logo {
+  padding: 24px 20px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #facc15;
+  letter-spacing: 1.5px;
+}
+
+.logoIcon {
+  font-size: 24px;
+}
+
+.logoName {
+  text-shadow: 0 0 10px rgba(250, 204, 21, 0.3);
+}
+
+.nav {
+  flex: 1;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #94a3b8;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  margin-left: -3px;
+}
+
+.navItem:hover {
+  color: #facc15;
+  background-color: #0f172a;
+  border-left-color: #facc15;
+}
+
+.navItem.active {
+  color: #facc15;
+  background-color: #1e293b;
+  border-left-color: #facc15;
+  font-weight: 600;
+}
+
+.footer {
+  padding: 20px 12px;
+  border-top: 1px solid #1e293b;
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #ef4444;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.logoutBtn:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 240px;
+  }
+}

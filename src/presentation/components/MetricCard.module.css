@@ -1,0 +1,90 @@
+/* MetricCard Styles */
+.card {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #475569;
+  background: linear-gradient(135deg, #334155 0%, #1e293b 100%);
+  transform: translateY(-2px);
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.card.color-amber .iconWrapper {
+  background-color: rgba(250, 204, 21, 0.1);
+  color: #facc15;
+}
+
+.card.color-green .iconWrapper {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.card.color-red .iconWrapper {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.card.color-blue .iconWrapper {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.value {
+  color: #f1f5f9;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.trend {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.trend.positive {
+  color: #22c55e;
+}
+
+.trend.negative {
+  color: #ef4444;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .value {
+    font-size: 20px;
+  }
+}
